@@ -1,0 +1,23 @@
+{
+  "name": "honeypotexploit",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "local_migrate": "node_modules/.bin/truffle migrate --network local --reset",
+    "forked_migrate": "node_modules/.bin/truffle migrate --network forked --reset",
+    "local_testnet": "node_modules/.bin/ganache-cli -i 5777 --noVMErrorsOnRPCResponse -m 'sweet treat'",
+    "forked_testnet": "node_modules/.bin/ganache-cli -i 5778 -f https://mainnet.infura.io/@5103260 --noVMErrorsOnRPCResponse -m 'sweet treat'",
+    "local_test": "node_modules/.bin/truffle test --network local",
+    "forked_test": "node_modules/.bin/truffle test --network forked"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ganache-cli": "^6.1.0-beta.2",
+    "truffle": "^4.0.6",
+    "web3": "^1.0.0-beta.30"
+  }
+}
