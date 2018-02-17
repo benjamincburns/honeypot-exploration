@@ -13,7 +13,7 @@ When running locally, we exploit both the target to exploit and the exploit cont
 
 When running in forked mode, we only deploy our exploit, and we use Ganache to fork mainnet. See `migrations/2_bank.js` and `migrations/3_exploit.js` to see how this is accomplished.
 
-For details about the honeypot contract itself, see the [reddit post](https://www.reddit.com/r/ethdev/comments/7x5rwr/tricked_by_a_honeypot_contract_or_beaten_by/) which inspired this repo, and Alex Sherbuck's writeup on how it all works in this [Medium blog post](https://medium.com/@alexsherbuck/dissecting-an-ethereum-honey-pot-7102d7def5e0).
+For details about the honeypot contract itself, see the [reddit post](https://www.reddit.com/r/ethdev/comments/7x5rwr/tricked_by_a_honeypot_contract_or_beaten_by/) which inspired this repo, and Alex Sherbuck's writeup on how the honeypot contract works in this [Medium blog post](https://medium.com/@alexsherbuck/dissecting-an-ethereum-honey-pot-7102d7def5e0).
 
 # Usage
 
