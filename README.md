@@ -9,7 +9,7 @@ This repository attempts to demonstrate that honeypot using the forking feature 
 
 There are two ways the contracts can be run: locally, and forked.
 
-When running locally, we exploit both the target to exploit and the exploit contract to our local blockchain created by Ganache. For the target to exploit, we use the contract code displayed on EtherScan.
+When running locally, we deploy both the target to exploit and the exploit contract to our local blockchain created by Ganache. For the target to exploit, we use the contract code displayed on EtherScan.
 
 When running in forked mode, we only deploy our exploit, and we use Ganache to fork mainnet. See `migrations/2_bank.js` and `migrations/3_exploit.js` to see how this is accomplished.
 
@@ -23,7 +23,7 @@ Make sure to install project dependencies by running `npm install` in the root d
 
 To run in "local" mode (see explanation above), open two consoles. In one, run `npm run local_testnet`, and in the other run `npm run local_migrate && npm run local_test`.
 
-Similarly, to run in "forked" mode, open two consoles. In one, run `npm run forked_testnet`, and in the other run `npm run forked_migrate && npm run local_test`.
+Similarly, to run in "forked" mode, open two consoles. In one, run `npm run forked_testnet`, and in the other run `npm run forked_migrate && npm run forked_test`.
 
 To understand how it all works, see the exploit contract in `contracts/Exploit.sol`, and the test in `test/exploit.js`.
 
